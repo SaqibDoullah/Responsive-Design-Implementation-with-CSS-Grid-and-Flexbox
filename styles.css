@@ -1,11 +1,55 @@
 /* Reset some basic elements */
-body, h1, p { margin: 0; padding: 0; }
-body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: hsl(212, 45%, 89%); }
-.container { text-align: center; }
-.card { background-color: #fff; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; }
-.qr-image { max-width: 100%; border-radius: 10px; }
-.title { color: hsl(218, 44%, 22%); margin-top: 20px; font-size: 18px; }
-.description { color: hsl(220, 15%, 55%); margin-top: 10px; font-size: 15px; }
+/* Basic Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.attribution { font-size: 11px; color: hsl(228, 45%, 44%); margin-top: 20px; }
-.attribution a { color: inherit; text-decoration: none; }
+/* Full height body and centering content */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: hsl(212, 45%, 89%); /* Background color as per design */
+    font-family: Arial, sans-serif; /* Assuming Arial is your chosen font */
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%; /* You can adjust or remove this as necessary */
+    max-width: 400px; /* Maximum width */
+}
+
+.qr-image {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.title {
+    color: hsl(218, 44%, 22%);
+    margin-top: 20px; /* Space between the image and title */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.description {
+    color: hsl(220, 15%, 55%);
+    margin-top: 10px; /* Space between the title and description */
+    font-size: 15px; /* Adjust font size as needed */
+}
+
+.attribution {
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+    margin-top: 20px; /* Space between content and attribution */
+    text-align: center;
+}
